@@ -35,7 +35,7 @@ export default function AuthForms() {
   }
 
   return (
-<<<<<<< HEAD
+
     // Added: wrapper for full-page gradient background and centered card
     <div className="auth-page-wrapper">
       {/* Component-scoped styles added below to improve the sign-in visual design */}
@@ -112,7 +112,7 @@ export default function AuthForms() {
           <input value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" type="password" required />
           <button type="submit" className="primary-full">{isSignUp ? 'Create account' : 'Log in'}</button>
         </form>
-=======
+
     <div className="auth-card">
       <h2>{isSignUp ? 'Sign Up' : 'Log In'}</h2>
       <form onSubmit={handleSubmit}>
@@ -120,16 +120,14 @@ export default function AuthForms() {
         <input value={password} onChange={e => setPassword(e.target.value)} placeholder="Password" type="password" required />
         <button type="submit">{isSignUp ? 'Create account' : 'Log in'}</button>
       </form>
->>>>>>> eee2eb678cab12c32f5ef5a96ada13d719b3646b
+
       <div className="auth-actions">
         <button onClick={() => setIsSignUp(!isSignUp)} className="link">{isSignUp ? 'Have an account? Log in' : "Don't have an account? Sign up"}</button>
         <button onClick={handleReset} className="link">Forgot password?</button>
       </div>
       {message && <p className="muted">{message}</p>}
-<<<<<<< HEAD
+
       </div>
-=======
->>>>>>> eee2eb678cab12c32f5ef5a96ada13d719b3646b
+
     </div>
   )
-}
